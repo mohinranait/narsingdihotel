@@ -13,7 +13,7 @@ export function PageHeader({ title, breadcrumb }: PageHeaderProps) {
       className="relative py-20 bg-cover bg-center"
       style={{
         backgroundImage:
-          'url(https://images.unsplash.com/photo-1551632786-fb674163db80?w=1400&h=900&fit=crop)',
+          'url(https://www.hotelthecoxtoday.com/images/breadcrumb.jpg)',
       }}
     >
       {/* Overlay */}

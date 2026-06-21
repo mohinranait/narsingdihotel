@@ -28,8 +28,7 @@ export function RoomsSection() {
               {/* Room Image */}
               <div className="relative overflow-hidden   h-60">
                 <Link href={`/accommodation/${room.id}`} className='relative ' >
-                  <div className='bottom-0  bg-transparent absolute top-2.5 left-2.5 right-2.5  border-[5px]  border-b-0 border-double border-white/60 '>
-                    {/* <div className=' w-full h-full left-0  right-0 bg-transparent absolute border-8 p-3 border-double border-white  '></div> */}
+                  <div className='bottom-0  bg-transparent absolute top-2.5 left-2.5 right-2.5  border-[5px]  border-b-0 border-double border-white/60 '>  
                   </div>
                   <img
                     src={room.image}

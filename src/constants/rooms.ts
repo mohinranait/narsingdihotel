@@ -22,7 +22,7 @@ export const ROOMS: Room[] = [
   {
     id: 'presidential-suite',
     name: 'Presidential Suite',
-    description: 'Attractively ornamented with complete marble & tiles and luxurious fabrics, our two prominent Presidential suites are 1900 & 1800 sq ft. These two unique suites boast an octagonal living area, the sides of which are fitted with windows overlooking the sea, the Bay of Bengal for the best views in the city.',
+    description: 'Attractively ornamented with complete marble & tiles and luxurious fabrics, our two prominent Presidential suites are 1900 & 1800 sq ft.',
     shortDescription: 'Enjoy our presidential suite',
     image: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=500&h=400&fit=crop',
     priceInBDT: 10000,

@@ -8,7 +8,7 @@ import { ROOMS } from "@/constants/rooms";
 export default function AccommodationPage() {
   return (
     <>
-      <Header />
+  
       <PageHeader
         title="ACCOMMODATION"
         breadcrumb={[
@@ -18,14 +18,13 @@ export default function AccommodationPage() {
       />
 
       <section className="py-16 bg-white">
-        <div className="max-w-[1200px] mx-auto px-4">
+        <div className="max-w-300 mx-auto space-y-5 px-4">
           {ROOMS.map((room) => (
             <RoomCard key={room.id} room={room} />
           ))}
         </div>
       </section>
 
-      <Footer />
     </>
   )
 }
