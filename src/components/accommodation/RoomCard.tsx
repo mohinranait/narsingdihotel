@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import type { Room } from '@/constants/rooms'
-import { Bed, Camera, Monitor, Wifi } from 'lucide-react'
+import { Bed, Camera, Link as LinkIcon, Monitor, Wifi } from 'lucide-react'
 
 interface RoomCardProps {
   room: Room
@@ -10,12 +10,15 @@ interface RoomCardProps {
 
 export function RoomCard({ room }: RoomCardProps) {
   return (
-    <div className=" border border-gray-200 ">
+    <div className=" border  border-gray-200 ">
       <div className="grid grid-cols-7">
         {/* Room Image */}
         <div className="col-span-2 items-start">
 
-          <Link href={'/'} className='relative '>
+          <Link  href={`/accommodation/${room.id}`} className='relative group '>
+            <span className='scale-0 group-hover:scale-100 transition-all absolute top-1/2 left-1/2 -translate-y-1/2 bg-white/80 py-2 px-2 rounded text-gray-500'>
+              <LinkIcon size={14} />
+            </span>
             <div className='bottom-2.5  bg-transparent absolute top-2.5 left-2.5 right-0  border-[5px]  border-r-0 border-double border-white/60 '>
 
             </div>
@@ -29,7 +32,10 @@ export function RoomCard({ room }: RoomCardProps) {
 
         {/* Room Details */}
         <div className='col-span-4 py-3 px-10 border-r border-dashed border-gray-200 '>
-          <h2 className="text-2xl font-bold text-[#2d3e50] mb-2 uppercase">{room.name}</h2>
+          <Link  href={`/accommodation/${room.id}`}>
+
+            <h2 className="text-2xl font-bold text-[#2d3e50] mb-2 uppercase">{room.name}</h2>
+          </Link>
 
           <p className="text-sm text-gray-600 mb-4">{room.roomSize}</p>
 
