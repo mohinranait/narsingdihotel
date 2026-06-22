@@ -45,7 +45,7 @@ export function RoomGallery({ images, roomName }: RoomGalleryProps) {
             {images.map((image, index) => (
               <CarouselItem
                 key={index}
-                className="pl-3 pr-3 py-1   md:basis-1/2  xl:basis-1/4  "
+                className="pl-3 pr-3 py-1   basis-1/2 md:basis-1/3 xl:basis-1/4  "
               >
 
                 <button

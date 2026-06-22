@@ -11,7 +11,7 @@ import SectionHeader from '../SectionHeader'
 export function FacilitiesCarousel() {
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-[#fbfbfb]">
       <div className="max-w-300 mx-auto px-4">
         {/* Section Title */}
         <SectionHeader

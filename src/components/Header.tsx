@@ -5,6 +5,7 @@ import { Mail, Menu, Phone } from 'lucide-react';
 import Link from 'next/link'
 import Logo from './Logo';
 import { navItems } from '@/constants/menus';
+import MobileMenu from './MobileMenu';
 
 
 
@@ -113,7 +114,7 @@ export function Header() {
             </nav>
 
             {/* Mobile Menu Button */}
-            {/* <SheetNoCloseButton /> */}
+            <MobileMenu />
           </div>
         </div>
       </header>

@@ -6,7 +6,7 @@ import SectionHeader from '@/components/SectionHeader'
 
 export function RoomsSection() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 ">
       <div className="max-w-300 mx-auto px-4">
 
 
@@ -24,7 +24,7 @@ export function RoomsSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {ROOMS.map((room) => (
 
-            <div key={room.id} className="group border border-gray-200 cursor-pointer">
+            <div key={room.id} className="group border border-gray-200 bg-white cursor-pointer">
               {/* Room Image */}
               <div className="relative overflow-hidden   h-60">
                 <Link href={`/accommodation/${room.id}`} className='relative ' >
