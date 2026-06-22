@@ -13,8 +13,9 @@ export function RoomTariff({ room }: RoomTariffProps) {
     <section className="py-12 border-b">
       <h2 className="text-2xl font-bold text-[#2d3e50] mb-6 uppercase">Room Tariff</h2>
 
-      <div className="overflow-x-auto">
-        <table className="w-full border-collapse">
+     <div className=" s">
+       <div className="w-full overflow-x-auto">
+  <table className="w-full min-w-max border-collapse">
           {/* Table Header */}
           <thead>
             <tr className="bg-[#6b5b7f] text-white">
@@ -42,6 +43,7 @@ export function RoomTariff({ room }: RoomTariffProps) {
           </tbody>
         </table>
       </div>
+     </div>
     </section>
   )
 }

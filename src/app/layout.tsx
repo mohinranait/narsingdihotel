@@ -27,12 +27,12 @@ export const metadata: Metadata = {
   },
 }
 
-export const viewport: Viewport = {
-  colorScheme: 'light',
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#A70F2E' },
-  ],
-}
+// export const viewport: Viewport = {
+//   colorScheme: 'light',
+//   themeColor: [
+//     { media: '(prefers-color-scheme: light)', color: '#A70F2E' },
+//   ],
+// }
 
 export default function RootLayout({
   children,
@@ -40,7 +40,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} bg-white`}>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} `}>
       <body className="font-sans antialiased bg-white">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}

@@ -100,7 +100,7 @@ export function Header() {
       {/* Top Bar */}
       <div className="bg-[#A70F2E] text-white text-sm py-2">
         <div className="max-w-300 mx-auto px-4 flex justify-between items-center">
-          <div className="flex gap-6">
+          <div className="hidden lg:flex gap-6">
             <span className='flex gap-1 items-center text-sm'><Phone size={14} /> {HOTEL_INFO.phone}</span>
             <span className='flex gap-1 items-center text-sm'><Mail size={14} /> {HOTEL_INFO.email}</span>
           </div>

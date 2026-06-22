@@ -60,8 +60,8 @@ export const ROOMS: Room[] = [
       'Internet in the rooms & lobby',
     ],
     images: [
-      'https://images.unsplash.com/photo-1578683078519-a680a9b72f58?w=800&h=600&fit=crop',
-      'https://images.unsplash.com/photo-1578926078328-123c61b91b1e?w=800&h=600&fit=crop',
+      'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=500&h=400&fit=crop',
+      'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=500&h=400&fit=crop',
       'https://images.unsplash.com/photo-1576674174375-94667666669d?w=800&h=600&fit=crop',
     ],
   },
