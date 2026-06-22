@@ -16,7 +16,7 @@ const navItems = [
   },
   {
     label: "ABOUT",
-    href: "#about",
+    href: "/about-us",
   },
   {
     label: "ACCOMMODATION",
@@ -62,7 +62,7 @@ const navItems = [
   },
   {
     label: "CONTACTS",
-    href: "#contact",
+    href: "/contact-us",
   },
 ];
 

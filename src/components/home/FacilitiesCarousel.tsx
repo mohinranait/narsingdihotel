@@ -60,8 +60,8 @@ export function FacilitiesCarousel() {
               ))}
             </CarouselContent>
 
-            <CarouselPrevious className=" bg-primary w-8 h-8 text-white lg:w-13 lg:h-13  flex -left-14  " />
-            <CarouselNext className=" bg-primary w-8 h-8 text-white lg:w-13 lg:h-13  flex -right-11" />
+            <CarouselPrevious className="hidden  bg-primary w-8 h-8 text-white lg:w-13 lg:h-13  lg:flex -left-14  " />
+            <CarouselNext className="hidden  bg-primary w-8 h-8 text-white lg:w-13 lg:h-13  lg:flex -right-11" />
           </Carousel>
         </div>
 

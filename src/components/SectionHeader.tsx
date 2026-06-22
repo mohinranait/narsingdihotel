@@ -13,10 +13,10 @@ const SectionHeader = ({ title, subTitle, rightNode, className,titleCss,subTitle
   return (
     <div className={cn('flex justify-between mb-12 items-center', className)}>
       <div>
-        <h3 className={cn('text-3xl md:text-4xl mb-2 font-bold text-center text-[#2d3e50]  uppercase',titleCss)}>{title}</h3>
+        <h3 className={cn('text-3xl md:text-4xl mb-2 font-bold text-[#2d3e50]  uppercase',titleCss)}>{title}</h3>
         <p className={cn('text-gray-600 uppercase', subTitleCss)}>{subTitle}</p>
       </div>
-      <div>
+      <div className='hidden lg:block'>
         {rightNode}
       </div>
     </div>
