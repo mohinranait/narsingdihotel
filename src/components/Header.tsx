@@ -1,98 +1,13 @@
 'use client'
 
 import { HOTEL_INFO } from '@/constants/hotel'
-import { Mail, Phone } from 'lucide-react';
-import Image from 'next/image'
+import { Mail, Menu, Phone } from 'lucide-react';
 import Link from 'next/link'
-import { FaFacebookF } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaTripadvisor } from "react-icons/fa";
 import Logo from './Logo';
-const navItems = [
-  {
-    label: "HOME",
-    href: "/",
-  },
-  {
-    label: "ABOUT",
-    href: "/about-us",
-  },
-  {
-    label: "ACCOMMODATION",
-    href: "/accommodation",
-    children: [
-      {
-        label: "PRESIDENTIAL SUITE",
-        href: "/accommodation/presidential-suite",
-      },
-      {
-        label: "ROYAL SUITE",
-        href: "/accommodation/royal-suite",
-      },
-      {
-        label: "PREMIER SUITE",
-        href: "/accommodation/premier-suite",
-      },
-      {
-        label: "HONEYMOON SUITE",
-        href: "/accommodation/honeymoon-suite",
-      },
-      {
-        label: "FAMILY SUITE",
-        href: "/accommodation/family-suite",
-      },
-      {
-        label: "EXECUTIVE SUITE",
-        href: "/accommodation/executive-suite",
-      },
-      {
-        label: "COX DELUXE ROOM",
-        href: "/accommodation/cox-deluxe-room",
-      },
-    ],
-  },
-  {
-    label: "RECREATION",
-    href: "#recreation",
-  },
-  {
-    label: "GALLERY",
-    href: "#gallery",
-  },
-  {
-    label: "CONTACTS",
-    href: "/contact-us",
-  },
-];
+import { navItems } from '@/constants/menus';
 
-const socialLinks = [
-  {
-    href: "#",
-    icon: FaFacebookF,
-    hoverClass: "hover:bg-[#1877F2]",
-    label: "Facebook",
-  },
-  {
-    href: "#",
-    icon: FaYoutube,
-    hoverClass: "hover:bg-[#FF0000]",
-    label: "YouTube",
-  },
-  {
-    href: "#",
-    icon: FaInstagram,
-    hoverClass:
-      "hover:bg-gradient-to-br hover:from-[#f9ce34] hover:via-[#ee2a7b] hover:to-[#6228d7]",
-    label: "Instagram",
-  },
-  {
-    href: "#",
-    icon: FaTripadvisor,
-    hoverClass: "hover:bg-[#34E0A1]",
-    label: "TripAdvisor",
-  },
-];
+
+
 
 export function Header() {
   return (
@@ -198,7 +113,7 @@ export function Header() {
             </nav>
 
             {/* Mobile Menu Button */}
-            <button className="md:hidden text-[#A70F2E]">☰</button>
+            {/* <SheetNoCloseButton /> */}
           </div>
         </div>
       </header>
