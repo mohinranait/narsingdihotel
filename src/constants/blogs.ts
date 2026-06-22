@@ -24,6 +24,7 @@ export const blogs : IBlog[] = [
     images:[
       'https://www.hotelthecoxtoday.com/images/juice/juice1.jpg',
       'https://www.hotelthecoxtoday.com/images/juice/juice2.jpg',
+        'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b',
       'https://www.hotelthecoxtoday.com/images/juice/juice3.jpg',
     ]
   },
