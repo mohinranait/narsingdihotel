@@ -42,12 +42,12 @@ export const navItems = [
     ],
   },
   {
-    label: "RECREATION",
-    href: "#recreation",
+    label: "Blogs",
+    href: "/blogs",
   },
   {
     label: "GALLERY",
-    href: "#gallery",
+    href: "/gallery",
   },
   {
     label: "CONTACTS",

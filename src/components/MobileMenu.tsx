@@ -14,7 +14,7 @@ import {
 
 import Link from "next/link";
 import { navItems } from "@/constants/menus";
-import { ChevronDown, Mail, Menu, Phone } from "lucide-react";
+import {  Mail, Menu, Phone } from "lucide-react";
 import { HOTEL_INFO } from "@/constants/hotel";
 import Logo from "./Logo";
 
