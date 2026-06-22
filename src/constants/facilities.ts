@@ -11,14 +11,14 @@ export const FACILITIES: Facility[] = [
     id: 'rooms-1',
     title: 'Luxury Rooms',
     description: 'Experience ultimate comfort in our carefully designed rooms',
-    image: 'https://images.unsplash.com/photo-1552566626-52f8b828add9?w=400&h=300&fit=crop',
+    image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400&h=300&fit=crop',
     category: 'accommodation',
   },
   {
     id: 'pool-2',
     title: 'Swimming Pool',
     description: 'Relax in our Olympic-sized swimming pool with sea views',
-    image: 'https://images.unsplash.com/photo-1576610616656-d3aa5d1f4534?w=400&h=300&fit=crop',
+    image: 'https://www.hotelthecoxtoday.com/images/juice/juice1.jpg?w=400&h=300&fit=crop',
     category: 'recreation',
   },
   {

@@ -25,7 +25,7 @@ export function RoomCard({ room }: RoomCardProps) {
             <img
               src={`${room.image}?w=200&h=800&fit=crop`}
               alt={room.name}
-              className="w-full h-full  object-cover"
+              className="w-full h-full max-h-50 object-cover"
             />
           </Link>
         </div>

@@ -90,7 +90,7 @@ export default function ContactUsCompo() {
                 <Map className="text-white" size={16} />
 
               </div>
-              Plot-7, Road-02, Cox’s Bazar
+              Plot-7, Road-02, narsingdi Bazar
             </div>
             <div className="flex items-center border border-gray-200 text-gray-700 gap-2">
               <div className="w-10 h-10 flex items-center justify-center bg-[#A70F2E]">

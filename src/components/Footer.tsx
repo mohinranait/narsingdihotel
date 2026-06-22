@@ -16,7 +16,7 @@ export function Footer() {
             <p className="text-sm text-gray-300 mb-4">
               {HOTEL_INFO.description}
             </p>
-            <Link href="#privacy" className="text-sm text-white border border-[#a70f2e] py-2 px-3 transition">
+            <Link href="/privacy-policy" className="text-sm text-white border border-[#a70f2e] py-2 px-3 transition">
               Privacy & Policy →
             </Link>
           </div>
