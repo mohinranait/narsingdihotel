@@ -7,6 +7,9 @@ import { Button } from "@/components/ui/button";
 import { HOTEL_CONTACTS } from "@/constants/hotel";
 import { Mail, Map, Phone } from "lucide-react";
 import SectionHeader from "@/components/SectionHeader";
+import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
+import ContactForm from "./ContactForm";
 
 export default function ContactUsCompo() {
   return (
@@ -29,8 +32,8 @@ export default function ContactUsCompo() {
               <div key={office.city}>
                 <h3 className="font-bold text-gray-700 mb-3 uppercase text-sm">{office.city}</h3>
                 <p className="text-sm text-gray-600 mb-2 flex items-center gap-2"><Map size={14} /> {office.address}</p>
-                <p className="text-sm text-gray-600 mb-2 flex items-center gap-2"> <Phone size={14} /> {office.phone.split(',')[0]}</p>
-                <p className="text-sm text-gray-600 mb-2 flex items-center gap-2"><Phone size={14} /> {office.phone.split(',')[1]?.trim()}</p>
+                <p className="text-sm text-gray-600 mb-2 flex items-center gap-2"> <Phone size={14} /> {office.phone}</p>
+                <p className="text-sm text-gray-600 mb-2 flex items-center gap-2"><FaWhatsapp size={14} /> {office.whatsapp}</p>
                 <a href={`mailto:${office.email}`} className="text-sm text-gray-600 flex items-center gap-2  transition">
                   <Mail size={14} /> {office.email}
                 </a>
@@ -42,18 +45,7 @@ export default function ContactUsCompo() {
           <div className="mt-12">
             <Card className="bg-white p-0 border rounded-none border-gray-200">
               <CardContent className="p-6 space-y-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <Input placeholder="NAME" className="h-10 border-gray-300 text-gray-600 rounded-none" />
-                  <Input placeholder="EMAIL" className="h-10 border-gray-300 text-gray-600 rounded-none" />
-                  <Input placeholder="PHONE" className="h-10 border-gray-300 text-gray-600 rounded-none" />
-                  <Input placeholder="SUBJECT" className="h-10 border-gray-300 text-gray-600 rounded-none" />
-                </div>
-
-                <Textarea placeholder="MESSAGE" rows={6} className=" border-gray-300 text-gray-600 rounded-none" />
-
-                <Button className="bg-[#A70F2E] h-10 rounded-none hover:bg-red-700 text-white">
-                  SEND YOUR MESSAGE
-                </Button>
+               <ContactForm />
               </CardContent>
             </Card>
           </div>
@@ -79,6 +71,40 @@ export default function ContactUsCompo() {
                   className="w-full h-full border-0"
                 ></iframe>
 
+              </div>
+            </CardContent>
+          </Card>
+
+
+          <Card className="bg-white border p-0 border-gray-100">
+            <CardContent className="p-3">
+              <div className="mb-8">
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Contact</h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  narsingdi Residential Hotel offer couple residential hotel Service. you can contact with sms, call or whatsapp.
+                </p>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Narsingdi Hotel .com. The best place in entire narsingdi district. Located in velanagar along the dhaka to Sylhet highway.
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
+
+          <Card className="bg-white border p-0 border-gray-100">
+            <CardContent className="p-3">
+              <div className="mb-8">
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Address:</h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  144/6 Sabmeher Tower, Dhaka Bus Stand
+                  Vela nagar, narsingdi, Bangladesh
+                </p>
+                <ul className="list-disc list-inside space-y-2 text-gray-700 ml-2">
+                  <li><strong>Phone: 01788453585</strong></li>
+                  <li><strong>WhatsApp Number: <Link href={'https://wa.me/1788453585'} className="text-blue-600">+8801788453585</Link> </strong> </li>
+                  <li><strong>Telegram Number: <Link href={'/'} className="text-blue-600">+8801788453585</Link> </strong> </li>
+
+                </ul>
               </div>
             </CardContent>
           </Card>

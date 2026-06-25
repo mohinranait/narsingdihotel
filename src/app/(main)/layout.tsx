@@ -1,5 +1,6 @@
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
+import WhatsAppButton from '@/components/WhatsAppButton'
 import React from 'react'
 
 const MainLayout = ({
@@ -12,6 +13,8 @@ const MainLayout = ({
       <Header />
       {children}
       <Footer />
+
+      <WhatsAppButton />
     </>
   )
 }

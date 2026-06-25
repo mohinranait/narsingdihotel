@@ -7,6 +7,7 @@ export interface ContactInfo {
   city: string
   address: string
   phone: string
+  whatsapp:string;
   email: string
   coordinates: {
     lat: number
@@ -14,36 +15,27 @@ export interface ContactInfo {
   }
 }
 
+
+const phone = "01788453585"
+
 export const HOTEL_CONTACTS: ContactInfo[] = [
   {
-    city: 'DHAKA OFFICE',
-    address: 'Selim Mansion, Flat # 35',
-    phone: '+880 2-46417552, 46417555, +880 1714 114402',
-    email: 'dhaka@hotelothecoxtoday.com',
+    city: 'narsingdi',
+    address: '144/6 Sabmeher Tower, Dhaka Bus Stand Vela nagar, narsingdi, Bangladesh',
+    phone,
+    whatsapp:phone,
+    email: 'info@narsingdihotel.com',
     coordinates: { lat: 23.8103, lng: 90.4125 },
   },
-  {
-    city: 'CHITTAGONG OFFICE',
-    address: 'Pacific Tower (2nd Floor)',
-    phone: '+880 31-2559 446-450, +880 1735-3003812',
-    email: 'sales@hotelthecoxtoday.com',
-    coordinates: { lat: 22.3569, lng: 91.7832 },
-  },
-  {
-    city: 'COX\'S BAZAR OFFICE',
-    address: 'Plot # 7, Road 02',
-    phone: '+880 1735-5998646, +880 1735-5908450',
-    email: 'reservation@hotelthecoxtoday.com',
-    coordinates: { lat: 21.4384, lng: 92.0076 },
-  },
+  
 ]
 
 export const HOTEL_INFO = {
-  name: 'Hotel The Cox Today',
+  name: 'Narsingdi Hotel',
   tagline: 'A Heavenly Place',
-  description: 'Hotel The Cox Today is one of the best five-star standard luxury hotel in Cox\'s Bazar.',
-  phone: '+88 01788453585',
-  email: 'narsingdi@hotel.com',
+  description: 'Narsingdi Hotel is one of the best five-star standard luxury hotel in Narsingdi.',
+  phone,
+  email: 'info@narsingdihotel.com',
   socialMedia : [
     {
       href: "#",
